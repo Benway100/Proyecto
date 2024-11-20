@@ -12,22 +12,16 @@ document.querySelectorAll('.menu a').forEach(link => {
           .catch(error => console.error('Error al cargar la sección:', error));
   });
 });
-let currentSlide = 0;
-const slides = document.querySelectorAll('.carousel-item');
-const totalSlides = slides.length;
+function mostrarSubmenu() {
+  const carrera = document.getElementById('carrera').value;
+  const submenu = document.getElementById('submenu-ingenieria');
 
-document.querySelector('.carousel-next').addEventListener('click', () => {
-    changeSlide(1);
-});
-
-document.querySelector('.carousel-prev').addEventListener('click', () => {
-    changeSlide(-1);
-});
-
-function changeSlide(direction) {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-    slides[currentSlide].classList.add('active');
+  if (carrera === 'ingenieria') {
+      submenu.style.display = 'block';
+  } else {
+      submenu.style.display = 'none';
+  }
 }
+
 
 
