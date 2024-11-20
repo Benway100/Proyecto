@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNAB Online</title>
+    <title>Oferta Académica - UNAB Online</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <!-- Cabecera -->
         <div class="header">
             <h1><span class="unab-text">UNAB</span><span class="online-text">.ONLINE</span></h1>
-            <a class="ingresar-btn" href="login.html"><i class="fa-solid fa-user"></i> Cerrar Sesión</a>
+            <a class="ingresar-btn" href="login.html"><i class="fa-solid fa-user"></i>Cerrrar Sesion</a>
         </div>
 
         <!-- Menú de Navegación -->
@@ -26,11 +24,25 @@
             <a href="contacto.html"><i class="fas fa-envelope"></i> Contáctenos</a>
         </div>
 
-        <!-- Contenido de la Página Principal -->
+        <!-- Contenido de Oferta Académica -->
         <div class="section">
-            <h2>Bienvenidos 🫡</h2>
-            <img src="https://www.periodico15.com/wp-content/uploads/2018/09/logo-unab-header.png" alt="Logo UNAB" class=""/>
-            <p>La Universidad Autónoma de Bucaramanga (UNAB) te da la bienvenida a su portal en línea, un espacio donde encontrarás toda la información que necesitas sobre nuestros programas, servicios y noticias destacadas.</p>
+            <h2>Oferta Académica</h2>
+            <p>Completa el formulario para recibir información sobre nuestros programas académicos.</p>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="carrera">Carrera de Interés:</label>
+                <input type="text" id="carrera" name="carrera" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <button type="submit">Solicitar Información</button>
+            </form>
         </div>
 
         <!-- Pie de página -->
